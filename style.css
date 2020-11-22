@@ -1,0 +1,91 @@
+/* Master Styles */
+body{
+    margin: 0px;
+    
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+/* Nav Menu */
+.nav-bar {
+    height: 5px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.logo {
+    background: url("images/logo.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    display: block;
+
+}
+
+.right-side {
+    display: flex;
+}
+
+
+.nav-bar > .right-side > div {
+    
+    text-transform: uppercase;
+    margin-right: 20px;
+    transition: border-bottom 0.5s;
+}
+
+.right-side > div a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+
+.right-side a:hover {
+    color: #1e82f7;
+    border-bottom: 1px solid #f7931e;
+}
+
+/*HERO Section */
+.hero-section {
+    height: 50vh;
+    justify-content: space-between;
+    background-color: #f7c04b;
+    display: flex;
+    padding: 38px;
+}
+
+.banner {
+    padding: 90px;
+    
+}
+
+.hero-section > .banner > div {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 200;
+    margin: -10px;
+    color: #ffff;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img > div{
+    height: 30vh;
+    width: 40vh;
+   
+    object-fit: contain;
+    
+}
+
+
+
+
+
