@@ -1,23 +1,26 @@
 /* Master Styles */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap');
 body{
     margin: 0px;
     
 }
-img{
+/*img{
     max-width: 100%;
     max-height: 100%;
-}
+}*/
 .container{
+    max-width: width 100%;
+    max-height: 100%;
     display: grid;
     grid-template-columns: 1fr; 
 }
 /* Nav Menu */
 .nav-bar {
     height: 5px;
-    background-color: #ffff;
+    /*background-color: #ffff;*/
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 48px;
 }
 .logo {
     background: url("images/logo.png") no-repeat;
@@ -53,39 +56,46 @@ img{
 
 /*HERO Section */
 @keyframes hero {
-    from {background-color: #fef7ee}
+    from {background-color: #fef7ee;}
     to {background-color: #f68a0b;}
 }
 .hero-section {
-    height: 50vh;
     justify-content: space-between;
-    background-color:  #fef7ee;
+    height: 95vh;
+    background: url('images/hero.jpg') no-repeat center;
     display: flex;
+    color: #ffff;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 500px;
     padding: 38px;
-   animation: hero 50s infinite alternate;
-    
 }
 
-.banner {
+.home-content {
+    margin: 150px 0 auto 40px;
+    padding: 68px;
+    min-height: 500px;
+}
+
+.hero-section .home-content .text-1{
+    font-size: 30px;
+}
+
+.hero-section .home-content .text-2{
+    font-size: 75px;
+    margin-top: -15px;
+    margin-left: -3px;
+}
+.hero-section .home-content .text-3{
+    font-size: 30px;
     padding: 90px;
-    
+    margin-top: 40px;
+    margin-left: 25px;
+    text-align: center;
 }
-
-.hero-section > .banner > div {
-    position: absolute;
-    font-size: 45px;
-    font-weight: bolder;
-    
+ 
+.hero-section .home-content .text-2 span{
+    color: #f7931e;
 }
-
-.hero-img > div{
-    height: 30vh;
-    width: 40vh;
-    margin-top: 100px;
-    
-}
-
-
 
 
 
