@@ -4,6 +4,9 @@ body{
     margin: 0px;
     
 }
+a{
+    text-decoration: none;
+}
 /*img{
     max-width: 100%;
     max-height: 100%;
@@ -73,18 +76,22 @@ body{
     background: url('images/hero.jpg') no-repeat;
     background-size: cover;
     background-position: relative;
-    display: flex;
+    display: inline-block;
+    overflow: auto;
     color: #ffff;
     font-family: 'Ubuntu', sans-serif;
     min-height: 500px;
     padding: 38px;
-    z-index: -1;
+    
+   
 }
 
 .home-content {
     margin: 150px 0 auto 40px;
     padding: 68px;
     min-height: 500px;
+   
+    
 }
 
 .hero-section .home-content .text-1{
@@ -99,14 +106,33 @@ body{
 .hero-section .home-content .text-3{
     font-size: 30px;
     padding: 90px;
-    margin-top: 40px;
-    margin-left: 25px;
+    margin-top: 90px;
+    margin-left: 35px;
     text-align: center;
 }
  
 .hero-section .home-content .text-2 span{
     color: #f7931e;
 }
+
+.home-content .btn  {
+    
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+    margin-top: -20px;
+
+}
+.btn:hover {
+    background-color: #f7931e;
+}
+
+
 
 
 
